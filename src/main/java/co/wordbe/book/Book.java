@@ -1,6 +1,5 @@
 package co.wordbe.book;
 
-@BookAnnotation
 public class Book {
 
     private static String priSta = "private static";
@@ -9,6 +8,8 @@ public class Book {
 
     private String title = "title";
 
+    public static String pubSta = "public static";
+
     public String pub = "public";
 
     protected String pro = "protected";
@@ -16,10 +17,8 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String pub, String pro) {
+    public Book(String title) {
         this.title = title;
-        this.pub = pub;
-        this.pro = pro;
     }
 
     private void priVoi() {
@@ -30,7 +29,7 @@ public class Book {
         System.out.println("public void");
     }
 
-    public int pubInt() {
-        return 10;
+    public int pubInt(int left, int right) {
+        return left + right;
     }
 }
