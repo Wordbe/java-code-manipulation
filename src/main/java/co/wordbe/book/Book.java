@@ -1,7 +1,7 @@
 package co.wordbe.book;
 
+@BookAnnotation
 public class Book {
-
 
     private static String priSta = "private static";
 

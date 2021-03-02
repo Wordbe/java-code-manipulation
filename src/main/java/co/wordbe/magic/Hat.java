@@ -1,4 +1,4 @@
-package co.wordbe;
+package co.wordbe.magic;
 
 public class Hat {
 

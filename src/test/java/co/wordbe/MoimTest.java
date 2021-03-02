@@ -1,5 +1,6 @@
 package co.wordbe;
 
+import co.wordbe.moim.Moim;
 import org.junit.Assert;
 import org.junit.Test;
 

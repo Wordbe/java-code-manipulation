@@ -1,10 +1,10 @@
-package co.wordbe;
+package co.wordbe.moim;
 
 public class Moim {
 
-    int limitPerson;
+    public int limitPerson;
 
-    int currentEnrollment;
+    public int currentEnrollment;
 
     public boolean isEnrollmentFull() {
         if (limitPerson == 0) {
