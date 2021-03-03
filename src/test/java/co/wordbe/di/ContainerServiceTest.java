@@ -19,5 +19,4 @@ public class ContainerServiceTest {
         assertNotNull(buyService);
         assertNotNull(buyService.buyRepository);
     }
-
 }
