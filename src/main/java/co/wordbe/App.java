@@ -1,17 +1,20 @@
 package co.wordbe;
 
 import co.wordbe.book.Book;
-import co.wordbe.book.WhiteBook;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Arrays;
 
 public class App
 {
-    public static void main( String[] args ) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
+    public static void main( String[] args ) {
+//        Moja moja = new MagicMoja();
+//        System.out.println(moja.pullOut());
+    }
+
+    private static void doReflection() throws ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException {
         Class<?> bookClass = Class.forName("co.wordbe.book.Book");
         Constructor<?> constructor = bookClass.getConstructor(String.class);
         Book book = (Book) constructor.newInstance("제목");
